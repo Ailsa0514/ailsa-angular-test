@@ -1,0 +1,121 @@
+nz-input-group {
+  width: 320px;
+  color: #ffffff;
+
+  .ant-input {
+    border-radius: 50px;
+    height: 40px;
+    color: #ffffff;
+    background: rgba(43, 42, 42, 0.2);
+    // border: none;
+  }
+}
+
+
+.wy-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  text-align: left;
+
+  .wy-icon {
+    position: relative;
+    z-index: 1000;
+    width: 176px;
+    height: 70px;
+    box-sizing: border-box;
+    background: url("../assets/topbar.png") no-repeat;
+
+    .logo {
+      background-position: 0 0;
+    }
+  }
+
+  .wy-search {
+    flex: 1;
+    align-content: center;
+    align-items: center;
+
+    .arrow,
+    .search {
+      display: inline-block;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    // width: 640px;
+  }
+
+  .wy-info {
+    width: 520px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+    .wy-info-personal {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+
+      .avtor {
+        display: flex;
+        align-items: center;
+
+        .personal-img {
+          flex: 1;
+          width: 50px;
+          height: 50px;
+          border: 1px solid #fafafa;
+          border-radius: 100%;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            display: inline-block;
+            vertical-align: baseline;
+          }
+        }
+      }
+
+      .nick {
+        margin: 0 10px;
+
+      }
+
+      .wy-vip {
+        width: 80px !important;
+      }
+
+      .wy-com {
+        display: inline-block;
+        flex: 1;
+        width: 60px;
+
+        .wy-message {
+          position: relative;
+          width: 30px;
+
+          .message ::before {
+            content: "2";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: #fafafa;
+            border-radius: 100%;
+            top: 0;
+          }
+        }
+      }
+
+      .nick,
+      .wy-vip {
+        &:hover {
+          color: red;
+        }
+      }
+
+    }
+
+
+  }
+}

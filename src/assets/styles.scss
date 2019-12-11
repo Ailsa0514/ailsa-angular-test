@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+$primary-color:rgb(198, 47, 47);
+$secondary-color: #ff791d;
+$border-color: #d3dbf5;
+$border-color2: #adcdff;
+$bg: #fafafa;
+$back:#383838;
+
+:host {
+  text-align: center;
+}
+
+* {
+  color: #ddd;
+}
+
+nz-header {
+  cursor: pointer;
+}
+
+nz-header,
+nz-footer {
+  background: $back !important;
+  color: #fff;
+}
+
+nz-footer {
+  line-height: 1.5;
+}
+
+nz-sider {
+  background: $bg !important;
+  color: #fff;
+  line-height: 120px;
+}
+
+nz-content {
+  background: $bg;
+  // color: #fff;
+  min-height: 120px;
+  line-height: 120px;
+}
+
+nz-layout {
+  margin-bottom: 48px;
+}
+
+nz-layout:last-child {
+  margin: 0;
+}
